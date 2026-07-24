@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>My Game</title>
+<title>Five Nights at Corgi's</title>
 
 <style>
 html, body {
@@ -26,6 +26,7 @@ body {
     background: black;
     width: 960px;
     height: 720px;
+    position: relative;
 }
 
 iframe {
@@ -33,6 +34,18 @@ iframe {
     height: 100%;
     border: none;
     display: block;
+}
+
+.credit {
+    position: fixed;
+    bottom: 10px;
+    left: 12px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    opacity: 0.7;
+    letter-spacing: 0.3px;
+    pointer-events: none;
 }
 </style>
 </head>
@@ -44,6 +57,10 @@ iframe {
         src="https://turbowarp.org/667188466/embed?autoplay&addons=remove-curved-stage-border&fullscreen-background=%23000000"
         allowfullscreen>
     </iframe>
+</div>
+
+<div class="credit">
+    Benjamin Raisanen - Five Nights at Corgi's (2020)
 </div>
 
 </body>
