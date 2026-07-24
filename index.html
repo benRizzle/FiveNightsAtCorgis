@@ -40,46 +40,6 @@ iframe{
     justify-content:center;
     gap:15px;
 }
-
-button{
-    border:none;
-    border-radius:999px;
-    padding:12px 26px;
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:.2s;
-    color:white;
-    background:linear-gradient(#2f2f2f,#181818);
-    box-shadow:
-        0 4px 10px rgba(0,0,0,.45),
-        inset 0 1px rgba(255,255,255,.08);
-}
-
-button:hover{
-    transform:translateY(-2px);
-    background:linear-gradient(#404040,#222);
-}
-
-button:active{
-    transform:translateY(1px);
-}
-
-.play{
-    background:linear-gradient(#22c55e,#15803d);
-}
-
-.play:hover{
-    background:linear-gradient(#2dd46b,#16a34a);
-}
-
-.stop{
-    background:linear-gradient(#ef4444,#b91c1c);
-}
-
-.stop:hover{
-    background:linear-gradient(#f87171,#dc2626);
-}
 </style>
 </head>
 
@@ -100,27 +60,10 @@ button:active{
     </iframe>
 </div>
 
-<div class="controls">
-    <button class="play" onclick="playGame()">▶ Play</button>
-    <button class="stop" onclick="stopGame()">⏹ Stop</button>
-</div>
-
 </div>
 
 <script>
 const game = document.getElementById("scratchGame");
-
-function playGame(){
-    game.src = game.src;
-}
-
-function stopGame(){
-    game.src = "about:blank";
-
-    setTimeout(()=>{
-        game.src = "https://turbowarp.org/667188466/embed?autoplay&addons=remove-curved-stage-border,pause";
-    },100);
-}
 </script>
 
 </body>
